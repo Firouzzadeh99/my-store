@@ -1,5 +1,4 @@
 
-```markdown
 # پروژه Django و Next.js با Docker
 
 این پروژه شامل یک اپلیکیشن **Django** برای بک‌اند و **Next.js** برای فرانت‌اند است که با استفاده از **Docker** در یک محیط کانتینری اجرا می‌شود. پروژه برای استفاده آسان از Docker Compose برای ساخت، اجرای و مدیریت سرویس‌ها تنظیم شده است.
@@ -8,9 +7,11 @@
 
 قبل از شروع، اطمینان حاصل کنید که ابزارهای زیر را روی سیستم خود نصب کرده‌اید:
 
+```bash
 - [Docker](https://www.docker.com/get-started)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 - [Git](https://git-scm.com/)
+```
 
 ## مراحل راه‌اندازی پروژه
 

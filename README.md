@@ -29,7 +29,7 @@
    پس از کلون کردن پروژه، از دستور زیر برای ساخت و اجرای کانتینرها استفاده کنید(اگر فایل setup.sh وجود دارد نیاز به اجرای دستور زیر نیست و دستور بعدی در مورد setup اجرا شود):
 
    ```bash
-   docker-compose up --build
+   docker compose up --build
    ```
    برای اجرای دستور setup رمینال را در مسیر پروژه باز کنید و دستور زیر را اجرا کنید تا برنامه اجرا شود.
    ```bash
@@ -64,8 +64,8 @@
 اگر نیاز به راه‌اندازی مجدد کانتینرها دارید، می‌توانید از دستور زیر استفاده کنید:
 
 ```bash
-docker-compose down
-docker-compose up --build
+docker compose down
+docker compose up --build
 ```
 
 

@@ -13,7 +13,7 @@
 
 # Step 1: Build Docker containers
 echo "Building Docker containers..."
-docker compose build
+# docker compose build
 
 # Step 2: Start the containers
 echo "Starting Docker containers..."

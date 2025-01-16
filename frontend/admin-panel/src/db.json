@@ -1,0 +1,38 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Product 1",
+      "price": 100,
+      "description": "Description of Product 1"
+    },
+    {
+      "id": "2",
+      "name": "Product 2",
+      "price": 150,
+      "description": "Description of Product 2"
+    }
+  ],
+  "users": [
+    {
+      "fullName": "یگانه ناصری",
+      "email": "mfirouzzadeh99@gmail.com",
+      "birthday": "2025-03-04",
+      "status": "active",
+      "username": "yegan",
+      "password": "123455",
+      "profile": "https://randomuser.me/api/portraits/women/74.jpg",
+      "id": "c137"
+    },
+    {
+      "fullName": "مینا رافعی",
+      "email": "mfirouzzadeh99@gmail.com",
+      "birthday": "2025-01-09",
+      "status": "deactive",
+      "username": "mina-min",
+      "password": "123456",
+      "profile": "https://randomuser.me/api/portraits/women/29.jpg",
+      "id": "84c6"
+    }
+  ]
+}

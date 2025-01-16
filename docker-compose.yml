@@ -13,24 +13,48 @@ services:
     depends_on:
       - db
 
-  
-  frontend:
+  main-site:
     build:
-      context: ./frontend
-    container_name: nextjs_frontend
+      context: ./frontend/main-site
+    container_name: nextjs_main_site
     ports:
-      - "3000:3000"
+      - 3000:3000
+    restart: always
     volumes:
-      - ./frontend:/app
+      - ./frontend/main-site:/app
+      - /app/node_modules
 
     working_dir: /app
-    command: sh -c "npm install && npm run dev"
-    # command: npm run dev
-
     environment:
-      - NODE_ENV=development
+      - WDS_SOCKET_HOST=127.0.0.1 
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true 
+    command: sh -c "npm install && npm run dev"
+
     depends_on:
       - backend
+
+  admin-panel:
+    build:
+      context: ./frontend/admin-panel
+    container_name: react_dmin_panel
+    ports:
+      - 3001:3001
+    restart: always
+    volumes:
+      - ./frontend/admin-panel:/app
+      - /app/node_modules
+      
+    working_dir: /app
+    environment:
+      - WDS_SOCKET_HOST=127.0.0.1 
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true 
+    command: sh -c "npm install && npm run dev"
+
+    depends_on:
+      - main-site
+
   db:
     image: postgres:13
     container_name: postgres_db

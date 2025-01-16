@@ -21,7 +21,6 @@
 
    ```bash
    git clone https://github.com/Firouzzadeh99/my-store.git
-   cd my-store.git
    ```
 
 **ساخت و راه‌اندازی کانتینرها با Docker Compose**:
@@ -57,7 +56,7 @@
    پس از اجرای کانتینرها و اعمال مایگریشن‌ها، شما می‌توانید پروژه را در مرورگر مشاهده کنید:
    
    - **Next.js (فرانت‌اند)**: [http://localhost:3000](http://localhost:3000)
-   - **React.js (فرانت‌اند)**: [http://localhost:3000](http://localhost:3001)
+   - **React.js (فرانت‌اند)**: [http://localhost:3001](http://localhost:3001)
    - **Django (بک‌اند)**: [http://localhost:8000](http://localhost:8000)
 
 ## توسعه و راه‌اندازی مجدد
